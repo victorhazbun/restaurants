@@ -1,5 +1,6 @@
-class PlacesLookupService
+# frozen_string_literal: true
 
+class PlacesLookupService
   # NOTE: Ideally the result should be cached.
   # That way we don't make unessesary API calls.
   #
