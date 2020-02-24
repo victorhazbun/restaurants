@@ -3,6 +3,8 @@
 module Api
   module V1
     class RestaurantsController < ApplicationController
+      LOOKUP_TYPE = 'restaurant'
+
       before_action :verify_coordinates_presence
 
       rescue_from StandardError, with: :handle_lookup_client_error
@@ -19,7 +21,7 @@ module Api
           lookup_client: GooglePlaces::Client.new(ENV['GOOGLE_API_KEY']),
           lat: params[:lat],
           lng: params[:lng],
-          types: 'restaurants'
+          types: LOOKUP_TYPE
         ) do
           create_transaction(success: true, error: nil)
         end
