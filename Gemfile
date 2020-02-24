@@ -16,9 +16,14 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
 
+# bcrypt() is a sophisticated and secure hash algorithm designed by The OpenBSD project for hashing passwords.
 gem 'bcrypt', '~> 3.1', '>= 3.1.13'
 
+# Authentication solution for Rails based on JWT
 gem 'knock', '~> 2.1', '>= 2.1.1'
+
+# This gem provides a Ruby wrapper around the Google Places API for use in your own project.
+gem 'google_places', '~> 2.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

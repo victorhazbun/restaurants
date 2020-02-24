@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
       resource :users, only: [:create]
       resources :restaurants, only: [:index]
-      resources :transactions, only: [:index]
+      # resources :transactions, only: [:index]
     end
   end
 end
