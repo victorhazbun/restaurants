@@ -19,7 +19,7 @@
 
 - `rails db:migrate`
 
-* How to run the test suite
+* How to test with postman
 
-- `rspec`
+- Download the Postman collection https://www.getpostman.com/collections/37cb4a4342cb06a63facf
 
