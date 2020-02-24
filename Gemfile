@@ -25,6 +25,9 @@ gem 'knock', '~> 2.1', '>= 2.1.1'
 # This gem provides a Ruby wrapper around the Google Places API for use in your own project.
 gem 'google_places', '~> 2.0'
 
+# The ultimate pagination ruby gem
+gem 'pagy', '~> 3.5'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

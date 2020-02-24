@@ -7,7 +7,9 @@ class PlacesLookupService
   # NOTE: Ideally yhis class should accept any lookup client.
   # That way we can switch beteen clients without touching this class.
   # The adapter design pattern should work to achive that behaivour.
-  def self.call(lookup_client:, lat:, lng:, types:)
-    lookup_client.spots(lat, lng, types)
+  def self.call(lookup_client:, lat:, lng:, types:, &callback)
+    result = lookup_client.spots(lat, lng, types)
+    callback.call
+    result
   end
 end
