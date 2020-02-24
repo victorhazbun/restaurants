@@ -6,6 +6,8 @@
 
 * System dependencies
 
+- PostgreSQL
+
 * Configuration
 
 - `cp .env.sample .env`
@@ -18,6 +20,7 @@
 * Database initialization
 
 - `rails db:migrate`
+- `rails db:seed`
 
 * How to test with postman
 
