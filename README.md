@@ -11,6 +11,7 @@
 ## Configuration
 
 - `cp .env.sample .env`
+- Update the `.env` file with corresponding values
 - `bundle install`
 
 ## Database creation
