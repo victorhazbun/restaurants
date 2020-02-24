@@ -1,28 +1,28 @@
 # README
 
-* Ruby version
+## Ruby version
 
 2.5.3
 
-* System dependencies
+## System dependencies
 
 - PostgreSQL
 
-* Configuration
+## Configuration
 
 - `cp .env.sample .env`
 - `bundle install`
 
-* Database creation
+## Database creation
 
 - `rails db:create`
 
-* Database initialization
+##  Database initialization
 
 - `rails db:migrate`
 - `rails db:seed`
 
-* How to test with postman
+## How to test with postman
 
 - Download the Postman collection https://www.getpostman.com/collections/37cb4a4342cb06a63facf
 
